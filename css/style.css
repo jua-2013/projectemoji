@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(165deg, #fcfc90, #ffc401);
+    font-family:  'poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    box-sizing: border-box;
+
+}
+#alls{
+    width: 80%;
+    height: 100vh;
+    margin: 0 10%;
+    margin-top: 2rem;
+    /* background-color: blue; */
+    
+}
+#menu{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.title{
+    text-transform: uppercase;
+    color: #555555;
+    font-size: 5rem;
+    position: relative;
+}
+h1 img:nth-child(1){
+    width: 3.8rem;
+    position: relative;
+    animation: title 1.8s linear 0s 3, scale 0.7s linear 6s;
+    
+         
+}
+@keyframes title{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+      
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.1);
+    }
+}
+#container{
+    margin-top: 4rem;
+    display: flex;
+}
+.container-informations{
+    width: 50%;
+    height: auto;
+}
+.paragraph{
+    width: 85%;
+    color: rgb(7, 4, 4);
+    font-size: 5rem;
+}
+.paragraph span{
+    color: rgb(236, 5, 5);
+    text-transform: uppercase;
+}
+.form{
+    width: 100%;
+    height: auto;
+}
+.form-informations{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 2rem ;
+}
+.form span{
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 0;
+    display: block;
+}
+#text{
+    padding: 2rem;
+    border-radius: .5rem;
+    border: .1rem solid #02027e;
+    background-color: transparent;
+    
+}
+#button{
+    padding: 2rem;
+    background-color: #01012b;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+.emojis{
+    /* background-color: red; */
+    width: 50%;
+    position: relative;
+    height: auto;
+}
+img{
+    width: 10rem;
+    position: absolute;
+}
+.emojis img:nth-last-of-type(1){
+    top: 5%;
+    right: 75%;
+    animation: emoji-touge 2s linear 0s infinite alternate;
+    z-index: 0;
+}
+.emojis img:nth-last-of-type(2){
+    top: 80%;
+    right: 35%;
+    z-index: 0;
+    animation: emoji-cry 4s linear 0s infinite alternate;
+    
+}
+.emojis img:nth-last-of-type(3){
+    top: -6%;
+    right: 40%;
+    z-index: 2;
+    animation: emoji-kiss 1.5s linear 0s infinite alternate;
+}
+.emojis img:nth-last-of-type(4){
+    top: 50%;
+    right: 17%;
+    z-index: 0;
+    animation: smille 3s ease-in-out 0s infinite alternate;
+}
+.emojis img:nth-last-of-type(5){
+    top: 10%;
+    right: 28%;
+    width: 30rem;
+    z-index: 1;
+    animation: emoji 4s linear 0s infinite alternate;
+}
+.emojis img:nth-last-of-type(6){
+    top: 67%;
+    right: 70%;
+    z-index: 2;
+    animation: emoji 3s ease-in-out 0s infinite alternate; 
+    /* pronto */
+    /* emoji-touge */
+}
+@keyframes emoji-touge{
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-10%,-10% );
+    }
+}
+@keyframes emoji{
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-6%,-6% );
+    }
+}
+@keyframes emoji-cry{
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-22%,-30% );
+    }
+}
+@keyframes emoji-kiss{
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(15%,-15% );
+    }
+}
+
+@keyframes smille{
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-28%,-10% );
+    }
+}
